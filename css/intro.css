@@ -1,0 +1,31 @@
+html {
+        background-image: url('file:///Users/fyberadmin/ChloeSite/public_html/img/me.jpg');
+	background-size: cover;
+	width: 100%;
+        height: 200vh;
+        text-decoration: none;
+}
+
+h1 {
+	background-color: white;
+	font-family: "Helvetica";
+        position: fixed;
+	padding: 20px;
+	font-size: 5em;
+	margin: 0 auto;
+	mix-blend-mode: screen; //this is the magic
+	top: 60px;
+        text-decoration:none;
+	letter-spacing: 1px;
+	overflow: hidden;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.header:hover {
+  background:#db0000;
+  border:0px solid #db0000;
+  color:#fff;  
+  text-decoration: none;
+} 

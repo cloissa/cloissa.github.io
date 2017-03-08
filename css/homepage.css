@@ -1,0 +1,813 @@
+/* I added junk here*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat); /* look into this */
+@import url(http://fonts.googleapis.com/css?family=Satisfy); /* handwritten cursive */
+@import url(http://fonts.googleapis.com/css?family=Carrois+Gothic+SC); /*all caps*/
+@import url(http://fonts.googleapis.com/css?family=Arvo); /*like memphis*/
+@import url(http://fonts.googleapis.com/css?family=Glegoo); /*serif*/
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);  /*sans serif, HUGE font family*/
+
+/******************************************************* Mail Object *******************************************************/
+.modal{
+  top: 80px !important;
+}
+
+.modal-body{
+  padding: 0 !important;
+}
+
+.center{
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #F3F3F3;
+}
+
+.fullscreen {
+    width: 100%;
+    height: 100%;
+}
+
+.mail *{
+padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mail body{
+    width: 100%;
+    height: 100%;
+padding-top: 40px;
+}
+
+/* #formobject*/
+.mail {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 300px;
+  background-color: #292B33;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.tosend{
+align: center;
+display: flex;
+}
+
+#emailme{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Source Sans Pro;
+  font-size: 28px;
+  font-weight: 300;
+  color: white;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+
+.trigger {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #db0000;
+  border-radius: 50%;
+  margin-left: 25px;
+  -webkit-transition: height .3s ease;
+          transition: height .3s ease;
+  cursor: pointer;
+}
+.trigger:after {
+  position: absolute;
+  content: '';
+  top: 38px;
+  left: 32px;
+  width: 50px;
+  height: 50px;
+  background: url("http://i58.tinypic.com/ngdksw.png") no-repeat;
+  display: inline;
+}
+.trigger button {
+  opacity: 0;
+}
+
+.trigger textarea {
+  display: none;
+}
+
+.modal .open {
+  width: 100%;
+  height: 300px;
+  border-radius: 0;
+  margin-left: 0;
+  cursor: auto;
+}
+.open:after {
+  top: 25px;
+  left: 25px;
+}
+.open button {
+  position: absolute;
+  opacity: 1;
+  bottom: 25px;
+  right: 25px;
+  outline: none;
+}
+
+.open textarea {
+  position: relative;
+  width: 400px;
+  height: 175px;
+  display: block;
+  background: transparent;
+  border: none;
+  resize: none;
+  top: 75px;
+  left: 25px;
+  font-size: 24px;
+}
+.open textarea:focus {
+  outline: 0;
+}
+
+.close {
+  width: 450px;
+  height: 0px;
+  -webkit-transition: height .3s ease;
+          transition: height .3s ease;
+}
+.close:after,
+.close button,
+.close textarea {
+  display: none;
+}
+
+button.send {
+  width: 75px;
+  height: 25px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 20px;
+  -webkit-transition: color .2s ease;
+          transition: color .2s ease;
+}
+button:hover {
+  color: #292B33;
+}
+
+svg {
+  display: none;
+}
+
+#check {
+  width: 75px;
+}
+
+form{
+  display: flex;
+  margin-top: 0px;
+  height: 91%;
+}
+/******************************************************* Misc ***************************************************************/
+
+.jobdescription{
+  margin-top:275px;
+}
+
+.homepagebio{
+  margin-top: 40px;
+  margin-bottom: 125px;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+#narrative{
+padding-left: 5%;
+padding-right: 5%;
+padding-top: 50px;
+}
+
+#home {
+  width: 85%;
+  padding-left: 10%;
+  color: white;
+  font-family: Carrois Gothic SC;
+
+}
+
+#youtube{
+   width: 80%;
+  padding-top: 8%;
+padding-left: 15%;
+}
+
+#player{
+padding-left: 29%;
+padding-top: 4%;
+height: 30%:
+}
+
+#fourohfour
+{
+   position: fixed;
+   bottom: 0px;
+   width: 100%;
+}
+#lost{
+  vertical-align: middle;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+
+#lostwords{
+
+margin-top: 90px;
+text-align: center;
+}
+
+#content{
+margin-top: 30px;
+margin-left:5px;
+margin-right:5px;
+padding: 5px;
+margin-bottom: 90px;
+}
+
+#link{
+text-align: center;
+}
+
+.left{
+float: left;
+width: 50%;
+
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+
+}
+
+h1{
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+
+.right{
+float: right;
+text-align: right;
+width: 50%;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+
+.MEd{
+    text-align: left;
+    list-style-type: none;
+}
+
+.skills
+{
+width: 25%;
+float: left;
+margin-top: 10px;
+}
+
+#main{
+margin-bottom:50px;
+}
+
+#resume{
+padding-left: 30px;
+padding-right: 30px;
+padding-bottom: 50px;
+}
+
+#resumefoot{
+margin: 0px;
+height: 40px;
+}
+
+#objective{
+color: grey;
+font-size:2em;
+}
+
+.h1header{
+color: grey;
+}
+
+.space{
+width: 100%
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+}
+/******************************************************* Resume Tricks **************************************************/
+#boardspace{
+width: 30%;
+}
+
+#board{
+/*width: 20%;*/
+}
+#board li {
+  list-style: none;
+  padding: 5px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  margin: 0 0 5px;
+}
+#board ul {
+  padding: 10px;
+  width: 10%;
+  margin: 0 0.5%;
+  display: inline-block;
+  vertical-align: top;
+}
+#board ul.over {
+  padding-bottom: 55px;
+  no-repeat #ccc;
+}
+#board ul.over li {
+  background: #fff;
+}
+
+#board div h3 {
+display: inline-block; 
+width: 10%; 
+margin: 1%; 
+text-align: center;
+}
+
+/**************************************************** Paralax **********************************************/
+.parallax {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.parallax h1{
+  font-color: white;
+}
+
+.resumeParallax {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.homeHero {
+    height: 500px;
+    background-image: url('../img/moon.jpg');
+}
+
+.resumeHero {
+    height: 300px;
+    background-image: url(resume.jpg);
+    padding-top: 170px;
+}
+
+
+@media (max-width:768px) {
+    .homeHero {
+        height: 400px
+    }
+   .resumeHero {
+        height: 200px;
+    }
+}
+
+#center,
+#dusk,
+canvas {
+    height: 500px
+}
+
+.resume, .hero,
+.hero img,
+table {
+    width: 100%
+}
+
+.hero{
+    max-height: 500px;
+    overflow: hidden
+}
+
+/************************************************* Resume Timeline ***********************************************/
+body#resumeBody div.timeline{
+  position: absolute;
+  margin-top: 60px;
+  z-index: 1;
+  width: 100%;
+}
+
+body#resumeBody div.timeline div.timebit{
+  position: relative;
+  background-color:#F8D359;
+  background-color:#2E416B;
+  background-color:#FBE293;
+  background-color:#f2f2f2;;
+  height: 80px;
+  cursor:pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+body#resumeBody div.timebit:hover {
+  transform: scale(1.05);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+body#resumeBody div.timeline div.overlap{
+  display: inline-block;
+  width:38%;
+}
+
+body#resumeBody div.timeline div.chs{
+  width: 20%;
+  display: inline-block;
+}
+
+body#resumeBody div.timeline div.chs:hover .chshover{
+  transform: scale(1.5);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  color: red;
+}
+
+body#resumeBody div.timeline div.random{
+  width: 27.5%;
+  display: inline-block;
+}
+
+body#resumeBody div.line {
+  height: 5px;
+  background-color: black;
+  width: 98.5%;
+  margin-top: -5px;
+}
+
+body#resumeBody div.timeline div.uop{
+  width: 70%;
+  display: inline-block;
+}
+
+body#resumeBody div.timeline div.uopcircle{
+  background-color: white;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%; 
+  margin-left: 35%;
+  background-image: url("../img/uop.png");
+  background-size: 75px 75px;
+  background-repeat: no-repeat;
+  margin-top: 2px;
+}
+
+body#resumeBody div.timeline div.spacer{
+  width: 7%;
+  display: inline-block;
+}
+
+body#resumeBody div.timeline div.ambos{
+  width: 71.5%;
+  display: inline-block;
+  background-image: url("../img/ambostext.png");
+  background-size: 90% 40px;
+  background-repeat: no-repeat;
+  background-position: 45%;
+}
+
+body#resumeBody div.timeline div.vista{
+  width: 30%;
+  height: 160px;
+  display: inline-block;
+  background-image: url("../img/vista.png"), url("../img/med.png");
+  background-size: 75px 75px, 67% 65px;
+  background-position: 10%, 90%;
+  background-repeat: no-repeat;
+    &:hover {
+    .popover {
+      display: inline-block;
+    }
+  }
+}
+
+body#resumeBody div.timeline div.hhco{
+  width: 30%;
+  height: 160px;
+  display: inline-block;
+  background-image: url("../img/hhco.svg");
+  background-size: 75px 75px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+body#resumeBody div.timeline .marker {
+  width: 5px;
+  height: 15px;
+  z-index: 5;
+  background-color: #333;
+  display: inline-block;
+}
+
+body#resumeBody div.timeline p.label{
+  z-index: 6;
+  color: black;
+}
+
+body#resumeBody .resumepdf{
+  float: right;
+}
+
+body#resumeBody div.timeline .ten{ margin-left: 5% !important; }
+body#resumeBody div.timeline .eleven, div.timeline .twleve, div.timeline .thirteen, div.timeline .fourteen { margin-left: 4% !important; }
+body#resumeBody div.timeline .fifteen { margin-left: 4.5%; }
+body#resumeBody div.timeline .sixteen { margin-left: 29%; }
+
+body#resumeBody .jobdescription div.showvista {display: none;}
+body#resumeBody .jobdescription div.showambos {display: none;}
+body#resumeBody .jobdescription div.showhhco {display: none;}
+body#resumeBody .jobdescription div.showuop {display: none;}
+body#resumeBody .jobdescription div.showrandom {display: none;}
+
+body#resumeBody .jobdescription.random .showambos {display: none;}
+body#resumeBody .jobdescription.random .showvista {display: none;}
+body#resumeBody .jobdescription.random .showuop {display: none;}
+body#resumeBody .jobdescription.random .showhhco {display: none;}
+body#resumeBody .jobdescription.random .showrandom {display: block;}
+
+body#resumeBody .jobdescription.ambos .showambos {display: block;}
+body#resumeBody .jobdescription.ambos .showvista {display: none;}
+body#resumeBody .jobdescription.ambos .showuop {display: none;}
+body#resumeBody .jobdescription.ambos .showhhco {display: none;}
+body#resumeBody .jobdescription.ambos .showrandom {display: none;}
+
+body#resumeBody .jobdescription.uop .showuop{ display: block; }
+body#resumeBody .jobdescription.uop .showvista {display: none;}
+body#resumeBody .jobdescription.uop .showambos {display: none;}
+body#resumeBody .jobdescription.uop .showhhco{display: none;}
+body#resumeBody .jobdescription.uop .showrandom {display: none;}
+
+body#resumeBody .jobdescription.vista .showvista{ display: block; }
+body#resumeBody .jobdescription.vista .showambos {display: none;}
+body#resumeBody .jobdescription.vista .showuop {display: none;}
+body#resumeBody .jobdescription.vista .showhhco {display: none;}
+body#resumeBody .jobdescription.vista .showrandom {display: none;}
+
+body#resumeBody .jobdescription.hhco .showhhco{ display: block; }
+body#resumeBody .jobdescription.hhco .showambos {display: none;}
+body#resumeBody .jobdescription.hhco .showuop {display: none;}
+body#resumeBody .jobdescription.hhco .showvista{ display: none; }
+body#resumeBody .jobdescription.hhco .showrandom {display: none;}
+
+body#resumeBody .lists.ambos, .lists.vista, .lists.uop, .lists.hhco, .lists { 
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  color: #DCDCDC;
+  
+}
+
+body#resumeBody .lists.ambos .ambos, .lists.vista .vista, .lists.uop .uop, .lists.hhco .hhco{ 
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease; 
+  color: black;
+}
+
+body#resumeBody .lists {
+  margin-top: 70px;
+}
+
+/************************************************* Resume Modal ***********************************************/
+body#resumeBody .welcome .modal-content{
+  padding: 20px;
+  text-align: center;
+}
+
+body#resumeBody .howdy {
+  font-family: Carrois Gothic SC, sans-serif;
+  font-size: 2rem;
+}
+
+/************************************************* Whole Doc ***********************************************/
+body,h1,h2,h3,h4,h5 {
+    font-family: "Source Sans Pro";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased!important;
+
+}
+
+body {
+    font-family: "Source Sans Pro" !important;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased!important;
+
+}
+
+.footer ul li a, .nav li a, a, p a {
+    text-decoration: none
+}
+
+body {
+    letter-spacing: -.01em;
+}
+
+#Name,
+h1 {
+    font-family: Carrois Gothic SC, sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 2em
+}
+
+.text--bold {
+    font-weight: 700
+}
+
+#Name,
+p {
+    font-weight: 400
+}
+
+p {
+    font-size: 1.15em;
+    text-align: left;
+    line-height: 1.7em;
+    letter-spacing: -.05;
+    margin: 0 0 1.5em
+}
+
+p a {
+    /*color: #22becc;*/
+    color: black;
+    -webkit-transition: all .5s;
+    transition: all .5s
+}
+
+.verticalCenter {
+    line-height: 500px
+}
+
+.verticalCenter h1 {
+    width: 100%;
+    font-size: 4em;
+    display: inline-block;
+    line-height: normal
+}
+
+@media (max-width:768px) {
+    .verticalCenter {
+        line-height: 400px
+    }
+    .verticalCenter h1 {
+        font-size: 3em
+    }
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #F8F8F8;
+}
+
+a {
+    cursor: pointer
+}
+
+.p-section {
+    padding: 40px 0
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px 
+    max-width: 1000px;
+}
+
+.photocontainer {
+    margin: 0 auto;
+/*    padding: 0 20px 
+    max-width: 1000px;*/
+}
+
+.nav .container{
+    max-width: 1000px;
+}
+
+.resumecontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+.anchor {
+    position: absolute;
+    margin-top: -150px
+}
+
+hr {
+    margin: 2em 0;
+    border: 1px solid #2E2513
+}
+
+.rounded {
+    border-radius: 100%
+}
+
+@media (max-width:768px) {
+    body {
+        padding-top: 0
+    }
+    .nav {
+        position: relative
+    }
+    .nav ul {
+        display: none
+    }
+}
+
+
+/******************************************************** Nav Bar ******************************************************/
+.navbar-brand img{
+  height: 50px;
+}
+
+.navbar-nav {
+    float: right !important;
+}
+
+.navbar{
+  font-family: Carrois Gothic SC;
+  font-size: 1.3em;
+}
+
+ul.nav {   
+  margin-top: 15px
+}
+
+.navbar{
+  min-height: 80px !important;
+}
+
+/***************************************************** Popover **************************************************/
+.popover {
+    max-width: 400px !important;
+    border: 0px !important;
+    font-family: "Source Sans Pro" !important;
+}
+
+.popover-title{
+  background-color: white !important;
+  border-bottom: 0px solid !important;
+  padding: 0 !important;
+
+}
+
+.ambopopover p{
+font-size: 1.1rem;
+}
+
+.popover .ambopopover .popover-inner:parent{
+    margin-top: 40px !important;
+}
